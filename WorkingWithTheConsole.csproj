@@ -6,13 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <EditorConfigFiles Remove="C:\dev\tests\ga\working-with-the-console\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\dev\tests\ga\working-with-the-console\.editorconfig" />
-  </ItemGroup>
-
 </Project>
