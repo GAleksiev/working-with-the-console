@@ -2,10 +2,8 @@
 
 namespace WorkingWithTheConsole;
 
-internal class Program
-{
-    static void Main(string[] args)
-    {
+internal class Program {
+    static void Main(string[] args) {
         WriteLineSample();
         // TODO: Go to the WriteLineExercise method body and write the exercise code
         WriteLineExercise();
@@ -23,8 +21,7 @@ internal class Program
         ReadKeyExercise();
     }
 
-    static void WriteLineSample()
-    {
+    static void WriteLineSample() {
         Console.WriteLine("Console.WriteLine outputs (writes to the output - in this case the console) a text and automatically adds new line at the end");
         Console.WriteLine("The WriteLine method of the Console class automatically adds new line at the end of the text");
         Console.WriteLine("Text written to the console after it will appear on the next line");
@@ -72,8 +69,7 @@ internal class Program
         Console.WriteLine($"Using $ before the string to output variables like the name {administratorName} and the floor {officeFloor}");
     }
 
-    static void WriteLineExercise()
-    {
+    static void WriteLineExercise() {
         Console.WriteLine("TODO: WriteLine exercise");
         // TODO: Use Console.WriteLine to output a text like this:
         // "We have ... items of the product ..."
@@ -87,8 +83,7 @@ internal class Program
         Console.WriteLine($"We have {count} items of the product : {productName}.");
     }
 
-    static void WriteSample()
-    {
+    static void WriteSample() {
         Console.Write("Console.Write is much like Console.WriteLine - it outputs the specified text but does not add new line at the end.");
         // The below lines will output 12345 - each string provided to Console.Write will be shown one after the other
         Console.Write("1");
@@ -110,8 +105,7 @@ internal class Program
         Console.Write("Console.Write can format the provided text with placeholders for variables the same way Console.WriteLine does it.");
     }
 
-    static void ReadLineSample()
-    {
+    static void ReadLineSample() {
         // Console.ReadLine() waits something to be written to the console that ends with new line
         // In our case the user will write to the console by typing on the keyboard
         // Console.ReadLine() will collect all the characters the user types and when the user presses ENTER key
@@ -128,8 +122,7 @@ internal class Program
         Console.WriteLine(line);
     }
 
-    static void ReadKeySample()
-    {
+    static void ReadKeySample() {
         Console.WriteLine("Press a key (you can also try to hold SHIFT, ALT, CTRL or even more than one of them at the same time before pressing). Also try 'non-printable' keys like functional key F1 - F12, arrow keys etc.");
         // Console.ReadKey() waits a single key to be written to the console
         // In our case the user will write to the console by typing on the keyboard
@@ -150,14 +143,12 @@ internal class Program
         // It is useful to know whether some "non-printable" character key was pressed like functional key F1 - F12, 
         Console.WriteLine("The ConsoleKey was {0}", keyInfo.Key);
         // Sample check if the key F1 was pressed
-        if (keyInfo.Key == ConsoleKey.F1)
-        {
+        if (keyInfo.Key == ConsoleKey.F1) {
             Console.WriteLine("You pressed F1");
         }
     }
 
-    static void ReadKeyExercise()
-    {
+    static void ReadKeyExercise() {
         Console.WriteLine("TODO: ReadKey exercise");
         // TODO: Call Console.ReadKey() and inspect the key that was pressed and if it is 'x', show something with Console.WriteLine
         // If it is not 'x', show something else with Console.WriteLine
@@ -170,10 +161,9 @@ internal class Program
         // }
         // ANSWER
         ConsoleKeyInfo wonder = Console.ReadKey();
-        if (wonder.KeyChar == 'x')
-        {
+        if (wonder.KeyChar == 'x ') {
             Console.WriteLine("  You pressed 'x'");
-        }
-        else { Console.WriteLine("  You did not press 'x'"); }
+        } else { Console.WriteLine("  You did not press 'x'"); }
     }
 }
+ 
