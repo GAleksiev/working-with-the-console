@@ -1,3 +1,0 @@
-# working-with-the-console
-working-with-the-console
-The name says it all...

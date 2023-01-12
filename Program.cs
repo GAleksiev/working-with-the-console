@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace WorkingWithTheConsole;
 
@@ -166,3 +166,4 @@ internal class Program {
         } else { Console.WriteLine("  You did not press 'x'"); }
     }
 }
+
